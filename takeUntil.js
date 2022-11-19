@@ -20,7 +20,7 @@ const assertArraysEqual = function(arr1, arr2) {
 const takeUntil = function(array, callback) {
   let newArray = [];
   // loop over each item in the original array,
-  // if the current item matches the value given based on the callback argument,
+  // if the current item put into the callback argument == true 
   // then assign a subarray to newArray which contains the original array from pnly index 0 up until the index of the callback argument AKA the current item 
   array.forEach((item, index) => {
     if (callback(item)) {
