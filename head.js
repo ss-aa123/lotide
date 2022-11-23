@@ -1,19 +1,10 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  let compare = actual === expected;
-  if (compare) {
-    console.log(`👽👽👽 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😡😡😡 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
+
+// FUNCTION IMPLEMENTATION
 const head = function(arr) {
   return arr[0];
 };
-// TEST CODE
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([3]), 5);
-assertEqual(head([3]), 3);
 
+
+module.exports = head;
