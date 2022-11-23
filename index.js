@@ -18,21 +18,20 @@ const map = require('./map');
 
 //exporting each function as a key of an object so that when you call that 'key' in this object, it calls that function with the same name. Thus you're able to export or import into a file, that key/function
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  assertEqual: assertEqual,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  assertArraysEqual: assertArraysEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  countOnly: countOnly,
-  countLetters: countLetters,
-  letterPositions: letterPositions,
-  without: without,
-  takeUntil: takeUntil,
-  map: map
-
+  head,
+  tail,
+  middle,
+  assertEqual,
+  eqArrays,
+  eqObjects,
+  assertArraysEqual,
+  assertObjectsEqual,
+  findKey,
+  findKeyByValue,
+  countOnly,
+  countLetters,
+  letterPositions,
+  without,
+  takeUntil,
+  map
 };
